@@ -62,11 +62,17 @@ const MainRoutes: React.FC<Props> = (props) => {
           <Route exact path="/">
             <IonPage>
               <IonContent>
-                <text>brus</text>
+                <text>bruh route 1</text>
               </IonContent>
             </IonPage>
           </Route>
-
+          <Route exact path="/2">
+            <IonPage>
+              <IonContent>
+                <text>bruh route 2</text>
+              </IonContent>
+            </IonPage>
+          </Route>
           {/* fail safe for wrong urls, redirect to main homepage */}
           <Route exact path="">
             <Redirect to="" />
