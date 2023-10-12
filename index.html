@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Spyke - Community Discussions</title>
+    <meta property="og:title" content="Spyke 🗿" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spyke.social" />
+    <meta property="og:image" content="https://spyke.social/spyke-black.png" />
+    <meta property="og:description" content="Spyke Social — Find your Clan!" />
+    <meta property="og:site_name" content="Spyke Social" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@spykesocial" />
+    <meta name="twitter:title" content="Spyke 🗿" />
+    <meta name="twitter:description" content="Spyke Social — Find your Clan!" />
+    <meta name="twitter:creator" content="@spykesocial" />
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta
+      name="twitter:image:src"
+      content="https://spyke.social/spyke-black.png"
+    />
+    <base href="/" />
+
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Spyke" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script
+      blocking="render"
+      async
+      defer
+      src="https://www.googletagmanager.com/gtag/js?id=G-GQ2SN5DYJK"
+    ></script>
+
+    <script blocking="render" async defer id="google-analytics">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-GQ2SN5DYJK");
+    </script>
+    <!-- Meta Pixel Code -->
+    <script blocking="render" async defer id="facebook-pixel">
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "247597437807487");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=247597437807487&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+  </body>
+</html>

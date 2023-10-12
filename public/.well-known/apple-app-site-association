@@ -1,0 +1,24 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "JCUD4D83CR.com.spykesocial.spykefrontend",
+        "components": [
+          {
+            "/": "/p/*"
+          },
+          {
+            "/": "/k/*"
+          },
+          {
+            "/" : "/c/*"
+          },
+          {
+            "/" : "/u/*"
+          }
+        ]
+      }
+    ]
+  }
+}

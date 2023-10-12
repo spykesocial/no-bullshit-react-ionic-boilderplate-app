@@ -1,0 +1,16 @@
+diff --git a/lib/types.d.ts b/lib/types.d.ts
+index 7a1215e1ca3e84ccd0ac8b7b845572a8554bdc95..a7c835d4b2662f00d2356cb08181baae9ee98dae 100644
+--- a/lib/types.d.ts
++++ b/lib/types.d.ts
+@@ -14,9 +14,9 @@ export interface Options {
+     eyebrows?: ('angryNatural' | 'defaultNatural' | 'flatNatural' | 'frownNatural' | 'raisedExcitedNatural' | 'sadConcernedNatural' | 'unibrowNatural' | 'upDownNatural' | 'angry' | 'default' | 'raisedExcited' | 'sadConcerned' | 'upDown')[];
+     top?: ('hat' | 'hijab' | 'turban' | 'winterHat1' | 'winterHat02' | 'winterHat03' | 'winterHat04' | 'bob' | 'bun' | 'curly' | 'curvy' | 'dreads' | 'frida' | 'fro' | 'froBand' | 'longButNotTooLong' | 'miaWallace' | 'shavedSides' | 'straight02' | 'straight01' | 'straightAndStrand' | 'dreads01' | 'dreads02' | 'frizzle' | 'shaggy' | 'shaggyMullet' | 'shortCurly' | 'shortFlat' | 'shortRound' | 'shortWaved' | 'sides' | 'theCaesar' | 'theCaesarAndSidePart' | 'bigHair')[];
+     topProbability?: number;
+-    facialHair?: ('beardLight' | 'beardMajestic' | 'beardMedium' | 'moustacheFancy' | 'moustacheMagnum')[];
++    facialHair?: ('' | 'beardLight' | 'beardMajestic' | 'beardMedium' | 'moustacheFancy' | 'moustacheMagnum')[];
+     facialHairProbability?: number;
+-    accessories?: ('kurt' | 'prescription01' | 'prescription02' | 'round' | 'sunglasses' | 'wayfarers' | 'eyepatch')[];
++    accessories?: ('' | 'kurt' | 'prescription01' | 'prescription02' | 'round' | 'sunglasses' | 'wayfarers' | 'eyepatch')[];
+     accessoriesProbability?: number;
+     clothingGraphic?: ('bat' | 'bear' | 'cumbia' | 'deer' | 'diamond' | 'hola' | 'pizza' | 'resist' | 'skull' | 'skullOutline')[];
+     accessoriesColor?: string[];

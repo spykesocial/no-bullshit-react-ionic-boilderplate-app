@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.spykesocial.frontend",
+      "sha256_cert_fingerprints": [
+        "B8:7D:F0:CD:84:7A:1E:93:8C:F6:07:4B:39:3F:1A:2A:12:E3:D4:7C:36:BA:0B:35:4C:4E:70:C6:D1:B8:FB:6B"
+      ]
+    }
+  }
+]

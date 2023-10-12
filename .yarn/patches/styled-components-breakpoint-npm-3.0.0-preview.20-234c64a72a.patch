@@ -1,0 +1,30 @@
+diff --git a/dist/breakpoint.d.ts b/dist/breakpoint.d.ts
+index d3c8466a42590911bcbe046dab361632f3e13006..aa98c035e7d8b1211c3385b7b401d00b9ed3f751 100644
+--- a/dist/breakpoint.d.ts
++++ b/dist/breakpoint.d.ts
+@@ -1,4 +1,4 @@
+ import { StyledProps, css } from 'styled-components';
+ declare type CSSFunction = (...params: Parameters<typeof css>) => <P extends object>({ theme }: StyledProps<P>) => ReturnType<typeof css>;
+-export declare const breakpoint: (breakpointA: import("./types").DefaultBreakpointName, breakpointB?: "mobile" | "tablet" | "desktop" | undefined) => CSSFunction;
+-export {};
++export declare const breakpoint: (breakpointA: import("./types").DefaultBreakpointName, breakpointB?: 'mobileS' | 'mobileM' | 'mobileL' | 'phablet' | 'tablet' | 'tabletL' | 'laptop' | 'laptopM' | 'laptopL' | 'desktop' | 'minimum' | undefined) => CSSFunction;
++export { };
+diff --git a/dist/types.d.ts b/dist/types.d.ts
+index c2922d6b70bacc48951d54fde250728e62b260b9..9cbe7a4db2a6db4434d8d87a7706f3e7bf8a4b44 100644
+--- a/dist/types.d.ts
++++ b/dist/types.d.ts
+@@ -6,7 +6,7 @@ export declare type BreakpointMap<B extends BreakpointNameConstraint> = {
+ declare type ThemeShape<B extends BreakpointNameConstraint> = {
+     breakpoints: BreakpointMap<B>;
+ };
+-export declare type DefaultBreakpointName = 'mobile' | 'tablet' | 'desktop';
++export declare type DefaultBreakpointName = 'mobileS' | 'mobileM' | 'mobileL' | 'phablet' | 'tablet' | 'tabletL' | 'laptop' | 'laptopM' | 'laptopL' | 'desktop' | 'minimum';
+ export declare type ThemedBreakpointName = DefaultTheme extends ThemeShape<infer B> ? B : DefaultBreakpointName;
+ export declare type BreakpointFunction<B extends BreakpointNameConstraint> = (breakpointA: B, breakpointB?: B) => typeof css;
+ export declare type ThemedBreakpointFunction<B extends BreakpointNameConstraint> = (breakpointA: B, breakpointB?: B) => <P extends object>(props: StyledProps<P>) => typeof css;
+@@ -25,4 +25,4 @@ export interface MapFunction<B extends BreakpointNameConstraint> {
+     <V extends ValueConstraint>(valueOrValues: ValueOrValueMap<B, V>, mapValueToStyle: (value: V) => string | CSSObject | ReturnType<typeof css>): any;
+     <V extends ValueConstraint, S extends ScaleConstraint>(valueOrValues: ValueOrValueMap<B, V>, mapValueToStyle: (value: V, scale: S) => string | CSSObject | ReturnType<typeof css>, scale: S | ((theme: DefaultTheme) => S)): any;
+ }
+-export {};
++export { };
